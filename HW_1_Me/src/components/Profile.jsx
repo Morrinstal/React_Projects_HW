@@ -1,4 +1,4 @@
-
+import me from "../assets/me.jpg"
 
 export const Profile = () => {
     return(
@@ -6,8 +6,8 @@ export const Profile = () => {
     <section>
         <h2>About me</h2>
         <img
-            src="https://via.placeholder.com/150"
-            alt="Моя фотография"
+            src={me}
+            alt="My Photo"
             className="profile-photo"
         />
         <p><strong>ФИО:</strong> Земан Артур Олегович</p>
