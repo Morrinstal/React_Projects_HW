@@ -1,3 +1,5 @@
+import './Card.css';
+
 const Card = ({ id, image, title, price, oldPrice, description, onAddToCart }) => {
   return (
     <div className="card">
