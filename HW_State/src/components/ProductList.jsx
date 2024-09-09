@@ -1,11 +1,18 @@
 import Card from './Card';
 import Guitar from '../assets/Guitar.jpg';
+import Violin from '../assets/Violin.jpg';
+import Piano from '../assets/Piano.jpg';
 
 const ProductList = () => {
+  const handleAddToCart = () => {
+    alert('Product was successfully added to cart!');
+  };
+
   const products = [
-    { id: 1, image: Guitar, title: "Guitar", price: "20", oldPrice: "30", description: "Description for product 1" },
-    { id: 2, image: Guitar, title: "Guitar", price: "20", oldPrice: "30", description: "Description for product 1" },
-    { id: 3, image: Guitar, title: "Product 3", price: "15", oldPrice: "20", description: "Description for product 3" }
+    { id: 1, image: Guitar, title: "Guitar", price: "199.99", oldPrice: "289.00", description: "High-quality guitar from USA" },
+    { id: 2, image: Violin, title: "Violin", price: "399.99", oldPrice: "189.99", description: 
+    "A famous violin from Italy" },
+    { id: 3, image: Piano, title: "Piano", price: "159.99", oldPrice: "129.99", description: "Amazing piano from Great Britain" }
   ];
 
   return (
@@ -18,7 +25,7 @@ const ProductList = () => {
           price={product.price}
           oldPrice={product.oldPrice}
           description={product.description}
-          onAddToCart={() => console.log(`Added ${product.title} to cart`)}
+          onAddToCart={handleAddToCart}
         />
       ))}
     </div>
