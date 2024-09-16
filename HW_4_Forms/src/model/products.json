@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1, 
+      "image": "./src/assets/Guitar.jpg",
+      "title": "Guitar",
+      "price": 199,
+      "oldPrice": 239,
+      "description": "High-quality guitar from USA"
+    },
+    {
+      "id": 2, 
+      "image": "./src/assets/Piano.jpg",
+      "title": "Piano",
+      "price": 129,
+      "oldPrice": 159,
+      "description": "Amazing piano from Ukraine"
+    },
+    {
+      "id": 3, 
+      "image": "./src/assets/Violin.jpg",
+      "title": "Violin",
+      "price": 289,
+      "oldPrice": 399,
+      "description": "Unique violin from Italy"
+    }
+]
